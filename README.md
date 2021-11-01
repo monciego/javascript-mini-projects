@@ -11,3 +11,7 @@
 ## **[02 - File Extension](https://github.com/monciego/vanillawebprojects/tree/main/02-file-extension)**
 
 - ### **gets the file extension of a file name based on input.**
+
+## **[03 - Random Quote Generator](https://github.com/monciego/vanillawebprojects/tree/main/03-random-quote-generator)**
+
+- ### **Generate a random quote on button click.**
