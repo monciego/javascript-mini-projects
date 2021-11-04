@@ -8,6 +8,8 @@
 
 - ### **changes color depends on integer.**
 
+> #### **Design** - https://www.figma.com/file/AGObiTuXIPKhZ9lbwJeVSM/counter?node-id=0%3A1
+
 ## **[02 - File Extension](https://github.com/monciego/vanillawebprojects/tree/main/02-file-extension)**
 
 - ### **gets the file extension of a file name based on input.**
