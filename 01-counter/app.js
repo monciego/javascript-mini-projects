@@ -1,6 +1,7 @@
 const increment = document.getElementById("increment");
 const decrement = document.getElementById("decrement");
 const reset = document.getElementById("reset");
+
 let countEl = document.getElementById("count");
 
 countEl.textContent = 0;

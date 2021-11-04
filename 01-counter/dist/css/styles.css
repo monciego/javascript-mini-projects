@@ -76,6 +76,39 @@ body {
   text-transform: capitalize;
 }
 
+.phone-navigation-line {
+  position: absolute;
+  bottom: 0.25rem;
+  right: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 0.25rem;
+  width: 8rem;
+  background: #000;
+}
+
+.phone-nav-icons {
+  height: 3rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 2rem;
+}
+
+.phone-icon {
+  height: 2rem;
+  width: 2rem;
+  color: #5d6370;
+  cursor: pointer;
+}
+
 .count {
   margin: 3rem 0;
   display: -webkit-box;
@@ -93,10 +126,14 @@ body {
           flex-direction: column;
 }
 
+.count-number {
+  color: #0d0628;
+}
+
 .count-circle {
   height: 16rem;
   width: 16rem;
-  border: #cf73db 0.75rem solid;
+  border: #c643b7 0.75rem solid;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,4 +181,9 @@ body {
 
 .count-buttons button:hover {
   background: #aa2c9b;
+}
+
+.count-buttons button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
