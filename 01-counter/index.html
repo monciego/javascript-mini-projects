@@ -13,13 +13,22 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="project-title">Counter</h1>
-      <div class="flex">
-        <button id="decrement" class="btn">-</button>
-        <span id="count"></span>
-        <button id="increment" class="btn">+</button>
+      <div class="phone">
+        <div class="phone-speaker"></div>
+        <main class="phone-app">
+          <h1 class="phone-app-title">counter app</h1>
+          <div class="count">
+            <div class="count-circle">
+              <span class="count-number" id="count"></span>
+            </div>
+            <div class="count-buttons">
+              <button class="count-decrement" id="decrement">decrement</button>
+              <button class="count-reset" id="reset">reset</button>
+              <button class="count-increment" id="increment">increment</button>
+            </div>
+          </div>
+        </main>
       </div>
-      <button id="reset" class="btn flex">Reset</button>
     </div>
 
     <!-- Javascript -->
