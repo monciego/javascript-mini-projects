@@ -514,11 +514,16 @@ const btn = document.getElementById("btnGenerator");
 const quoteEl = document.getElementById("quote");
 const author = document.getElementById("author");
 
-btn.addEventListener("click", () => {
+const random = () => {
   const random = quotes[Math.floor(Math.random() * quotes.length)];
   console.log(random.quote);
   console.log(random.author);
-
   quoteEl.innerHTML = random.quote;
   author.innerHTML = random.author;
+};
+
+random();
+
+btn.addEventListener("click", () => {
+  random();
 });
