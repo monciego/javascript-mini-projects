@@ -16,6 +16,8 @@
 
 - ### **gets the file extension of a file name based on input.**
 
+> #### **Design** - https://www.figma.com/file/u6KBkWlJO18q7MRSWLG9PI/file-extension?node-id=2%3A3
+
 ## **[03 - Random Quote Generator](https://github.com/monciego/vanillawebprojects/tree/main/03-random-quote-generator)**
 
 - ### **Generate a random quote on button click.**
