@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Frank+Ruhl+Libre:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
@@ -14,13 +14,46 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="text-center">Random Quote Generator</h1>
-      <blockquote id="quote" class="card">
-        “If you can’t fly then run, if you can’t run then walk, if you can’t
-        walk then crawl, but whatever you do you have to keep moving forward.” –
+      <header>
+        <h2>random</h2>
+        <div class="menu">
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </header>
+      <q id="quote">
+        If you can’t fly then run, if you can’t run then walk, if you can’t walk
+        then crawl, but whatever you do you have to keep moving forward
+      </q>
+      <p id="author">
+        <svg
+          width="55"
+          height="1"
+          viewBox="0 0 68 1"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line y1="0.5" x2="68" y2="0.5" stroke="black" />
+        </svg>
         Martin Luther King, Jr.
-      </blockquote>
-      <button id="btn" class="btn">Generate</button>
+      </p>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="btn-generator"
+        id="btnGenerator"
+        height="65"
+        width="65"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
+      </svg>
     </div>
   </body>
 </html>
