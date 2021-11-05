@@ -1,5 +1,5 @@
-// instead of hardcoding this arrays of object, use api [https://type.fit/api/quotes]
-// reason why i hardcode it: practice javascript object
+// instead of hardcoding this array of objects, use api [https://type.fit/api/quotes]
+// reason why i hardcoded it: practicing javascript object
 const quotes = [
   {
     quote: "Keep your fears to yourself, but share your courage with others.",
