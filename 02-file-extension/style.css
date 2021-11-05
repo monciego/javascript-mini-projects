@@ -168,4 +168,40 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media all and (max-width: 900px) {
+  table {
+    width: 100%;
+  }
+}
+
+td,
+th {
+  border: 1px solid #362e2e;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #d5d8da;
+}
+
+#error {
+  position: absolute;
+  font-size: 2rem;
 }
