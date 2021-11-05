@@ -23,3 +23,4 @@
 ## **[03 - Random Quote Generator](https://github.com/monciego/vanillawebprojects/tree/main/03-random-quote-generator)**
 
 - ### **Generate a random quote on button click.**
+  > #### **Design** -[https://www.figma.com/file/Io6EeRvFIRQcWKQpH4x3eW/quote-generator?node-id=0%3A1](https://www.figma.com/file/Io6EeRvFIRQcWKQpH4x3eW/quote-generator?node-id=0%3A1)
