@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
@@ -14,20 +14,33 @@
   </head>
   <body>
     <div class="container">
-      <h1>Get file extension</h1>
-      <fieldset>
-        <legend>File Extension</legend>
+      <header>
+        <h2 class="logo">get file extension</h2>
+        <a href="" class="github">
+          <svg
+            width="24"
+            height="23"
+            viewBox="0 0 24 23"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.0013 0C9.15202 0.000868639 6.39596 0.997775 4.22618 2.81239C2.05639 4.627 0.61443 7.14094 0.158237 9.9045C-0.297955 12.6681 0.261382 15.5009 1.73619 17.8964C3.211 20.2919 5.50507 22.0936 8.20802 22.9794C8.80679 23.0883 9.00092 22.7216 9.00092 22.4123V20.2175C5.66276 20.9308 4.96824 18.8262 4.96824 18.8262C4.74765 18.1131 4.27473 17.501 3.63494 17.1005C2.54627 16.3685 3.71823 16.3839 3.71823 16.3839C4.0983 16.4357 4.46132 16.5721 4.77956 16.7827C5.09781 16.9934 5.36288 17.2726 5.55455 17.5993C5.71739 17.8899 5.93718 18.1459 6.20124 18.3527C6.46529 18.5594 6.76839 18.7127 7.09305 18.8038C7.41771 18.8948 7.7575 18.9218 8.09283 18.8832C8.42816 18.8446 8.7524 18.7411 9.04683 18.5788C9.10007 17.9805 9.37056 17.421 9.8089 17.0025C7.14362 16.7029 4.34192 15.6918 4.34192 11.1752C4.32521 10.0035 4.76786 8.87037 5.57816 8.01056C5.21164 6.99356 5.25338 5.87754 5.69489 4.88972C5.69489 4.88972 6.7029 4.57332 8.99567 6.09798C10.9624 5.56875 13.0377 5.56875 15.0044 6.09798C17.2952 4.57332 18.3012 4.88972 18.3012 4.88972C18.7435 5.87729 18.7858 6.99346 18.4193 8.01056C19.2302 8.8699 19.6725 10.0035 19.6542 11.1752C19.6542 15.7041 16.8472 16.701 14.1754 16.9929C14.4629 17.2782 14.6851 17.6206 14.8271 17.9971C14.969 18.3736 15.0274 18.7756 14.9985 19.1761V22.4123C14.9985 22.7255 15.1906 23.0941 15.7992 22.9781C18.5016 22.0915 20.7948 20.2893 22.2688 17.8937C23.7428 15.4981 24.3014 12.6653 23.8447 9.90217C23.388 7.13899 21.9458 4.62556 19.776 2.81141C17.6062 0.997263 14.8503 0.000714701 12.0013 0V0Z"
+              fill="black"
+            />
+          </svg>
+          <span>GitHub</span>
+        </a>
+      </header>
+      <main>
         <div class="input-group">
-          <input
-            id="input"
-            type="text"
-            placeholder="enter a file name with extension e.g index.js"
-          />
-          <button type="button" class="btn" id="btn">Extract</button>
+          <input type="text" id="input" placeholder="Enter a file name" />
+          <button id="btn" type="button">submit</button>
         </div>
-      </fieldset>
-      <h3 id="inputValue"></h3>
-      <h3 id="filename"></h3>
+      </main>
+      <div class="result">
+        <h3 id="inputValue"></h3>
+      </div>
     </div>
   </body>
 </html>

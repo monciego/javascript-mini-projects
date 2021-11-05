@@ -8,15 +8,14 @@
 
 /* variables */
 :root {
-  --light-bg: #e4e7eb;
+  --light-bg: #d9dde2;
   --dark-bg: #0d0e0e;
   --dark-text: #0d0e0e;
   --light-text: #fff;
-  --link: #0000ee;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: var(--light-bg);
   color: var(--dark-text);
 }
@@ -95,52 +94,78 @@ th {
 /* global styling */
 
 .container {
-  max-width: 50%;
+  max-width: 80%;
   width: 100%;
   margin: 0 auto;
 }
 
-.flex {
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.github {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0.25rem;
+  font-weight: 600;
 }
 
-.project-title {
-  text-align: center;
-  font-size: 5rem;
+.github:hover {
+  opacity: 0.7;
 }
 
-.btn {
-  display: inline-block;
-  background: var(--dark-bg);
-  outline: none;
-  border: none;
-  padding: 0.1em 2em;
-  cursor: pointer;
-  color: #fff;
-  height: 2rem;
-  font-size: 1rem;
-}
-
-.btn:hover {
-  opacity: 0.9;
-}
-
-.btn:hover:active {
-  transform: scale(0.98);
+.input-group {
+  margin: 0 auto;
+  background: red;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  max-width: 95%;
+  margin: 3.5rem 0;
 }
 
 input {
-  height: 2rem;
-  width: 25rem;
-  margin: 1rem 0 1rem 1rem;
-  padding: 0.5rem 0.8rem;
-  font-family: inherit;
+  padding: 0.35rem 1rem;
+  width: 45rem;
+  height: 2.8rem;
+  outline: none;
+  border: none;
 }
 
-h3 {
-  text-align: center;
-  margin: 3rem 0;
-  font-size: 2.5rem;
+button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-weight: 600;
+  padding: 0.25rem 2rem;
+  background: var(--dark-bg);
+  color: var(--light-text);
+  cursor: pointer;
+  font-size: 0.85rem;
+  border: none;
+  outline: none;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
