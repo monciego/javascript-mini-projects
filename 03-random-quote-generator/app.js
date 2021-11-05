@@ -513,6 +513,11 @@ const quotes = [
 const btn = document.getElementById("btnGenerator");
 const quoteEl = document.getElementById("quote");
 const author = document.getElementById("author");
+// aside
+const menu = document.querySelector(".menu");
+const exit = document.querySelector(".close");
+const sidebar = document.querySelector("aside");
+const ul = document.getElementById("recentQuotes");
 
 const random = () => {
   const random = quotes[Math.floor(Math.random() * quotes.length)];
@@ -520,10 +525,36 @@ const random = () => {
   console.log(random.author);
   quoteEl.innerHTML = random.quote;
   author.innerHTML = random.author;
+
+  // create list
+  const li = document.createElement("li");
+  ul.appendChild(li);
+  li.setAttribute("id", "recentQuote");
+  /*   const recentQuote = (recentQuotes.innerHTML = random.author); */
+
+  // add the quote in li
+  li.innerHTML = `${random.quote} — ${random.author}`;
+
+  // aside
+  const recentTitle = document.getElementById("recentTitle");
+
+  if (li > 1) {
+    console.log("hello");
+  }
 };
 
 random();
 
+// event listners
 btn.addEventListener("click", () => {
   random();
+});
+
+menu.addEventListener("click", () => {
+  console.log("open");
+  sidebar.classList.add("open");
+});
+
+exit.addEventListener("click", () => {
+  sidebar.classList.remove("open");
 });
