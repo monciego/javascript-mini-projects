@@ -129,7 +129,7 @@ h2 {
   font-size: 2rem;
 }
 
-#author {
+.author {
   display: flex;
   align-items: center;
   justify-content: flex-end;
