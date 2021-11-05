@@ -12,11 +12,13 @@
 >
 > #### **LIVE** - **[Counter Project](https://js-project-counter.netlify.app/)**
 
-## **[02 - File Extension](https://github.com/monciego/vanillawebprojects/tree/main/02-file-extension)**
+## **[02 - File Extension](https://github.com/monciego/vanillawebprojects/tree/main/02-file-extension) — [See Live](https://js-project-file-extension.netlify.app/)**
 
 - ### **gets the file extension of a file name based on input.**
 
 > #### **Design** - https://www.figma.com/file/u6KBkWlJO18q7MRSWLG9PI/file-extension?node-id=2%3A3
+>
+> #### **LIVE** - [File Extension Project](https://js-project-file-extension.netlify.app/)
 
 ## **[03 - Random Quote Generator](https://github.com/monciego/vanillawebprojects/tree/main/03-random-quote-generator)**
 
