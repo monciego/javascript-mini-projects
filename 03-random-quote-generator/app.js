@@ -518,6 +518,7 @@ const menu = document.querySelector(".menu");
 const exit = document.querySelector(".close");
 const sidebar = document.querySelector("aside");
 const ul = document.getElementById("recentQuotes");
+const button = document.getElementById("twitter");
 
 const random = () => {
   const random = quotes[Math.floor(Math.random() * quotes.length)];
@@ -541,6 +542,8 @@ const random = () => {
   if (li > 1) {
     console.log("hello");
   }
+
+  button.href = `https://twitter.com/intent/tweet?text=${random.quote} - ${random.author}`;
 };
 
 random();
