@@ -212,3 +212,42 @@ aside.open {
   opacity: 0.85;
   text-decoration: underline;
 }
+
+/* media queries */
+
+@media all and (max-width: 920px) {
+  aside {
+    width: 55%;
+  }
+}
+
+@media all and (max-width: 742px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+  aside {
+    width: 65%;
+  }
+
+  #quote {
+    font-size: 1.8rem;
+  }
+
+  #quote,
+  #twitter {
+    width: 100%;
+  }
+
+  .author,
+  #twitter {
+    justify-content: center;
+  }
+
+  .author {
+    font-size: 1rem;
+  }
+
+  #twitte {
+    font-size: 0.85rem;
+  }
+}
