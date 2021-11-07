@@ -30,4 +30,4 @@
 ## **[04 - New Year Countdown](https://github.com/monciego/vanillawebprojects/tree/main/04-newyear-countdown)**
 
 - ### **Resets every year**
-  > #### **Design** -https://www.figma.com/file/kHLTtclMK7zK2DPiE8cGCZ/newyear-countdown?node-id=0%3A1](https://www.figma.com/file/kHLTtclMK7zK2DPiE8cGCZ/newyear-countdown?node-id=0%3A1)
+  > #### **Design** - [https://www.figma.com/file/kHLTtclMK7zK2DPiE8cGCZ/newyear-countdown?node-id=0%3A1](https://www.figma.com/file/kHLTtclMK7zK2DPiE8cGCZ/newyear-countdown?node-id=0%3A1)
