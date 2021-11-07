@@ -31,3 +31,8 @@
 
 - ### **Resets every year**
   > #### **Design** - [https://www.figma.com/file/kHLTtclMK7zK2DPiE8cGCZ/newyear-countdown?node-id=0%3A1](https://www.figma.com/file/kHLTtclMK7zK2DPiE8cGCZ/newyear-countdown?node-id=0%3A1)
+
+## **[05 - Multiple Modal with accordion](https://github.com/monciego/javascript-mini-projects/tree/main/05-multiple-modal)**
+
+- ### **with accordion**
+  > #### **Design** - [https://www.uidesigndaily.com/posts/sketch-cookie-preferences-modal-pop-up-day-1296](https://www.uidesigndaily.com/posts/sketch-cookie-preferences-modal-pop-up-day-1296)
