@@ -3,6 +3,8 @@ const hours = document.getElementById("hours");
 const minutes = document.getElementById("minutes");
 const seconds = document.getElementById("seconds");
 
+// elements
+
 // get the year (new year)
 const newyearCountDate = () => {
   // let today = new Date("January 02, 2022 00:00:00");
