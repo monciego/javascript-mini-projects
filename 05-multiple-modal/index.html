@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./app.js"></script>
+    <title>Multiple Modal</title>
+  </head>
+  <body>
+    <div class="container">
+      <button id="open-modal" data-target="#mainModal">open modal</button>
+      <section class="modal-content main-modal" id="mainModal">
+        <h2>Privacy Preference Center</h2>
+        <p>
+          When you visit any website, it may store or retrieve information on
+          your browser, mostly in the form of cookies. This information might be
+          about you, your preferences or your device and is mostly used to make
+          the site work as you expect it to.
+        </p>
+        <div class="cta">
+          <button class="allow" data-target="#allow">allow all</button>
+          <button class="decline" data-target="#decline">
+            Decline unnecessary cookies
+          </button>
+        </div>
+        <button class="manage" data-target="#manage">
+          Manage Consent Preferences
+        </button>
+        <a href="">Learn more</a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="exit"
+          height="24"
+          width="24"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </section>
+
+      <section class="modal-content" id="allow">
+        are you sure?
+        <a href="">yes</a>
+        <a href="">no</a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="exit"
+          height="24"
+          width="24"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </section>
+
+      <section class="modal-content" id="decline">
+        are you sure?
+        <a href="">yes</a>
+        <a href="">no</a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="exit"
+          height="24"
+          width="24"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </section>
+
+      <section class="modal-content" id="manage">
+        <h2>Manage Consent preferences</h2>
+        <div class="accordion">
+          <button class="accordion-button">+ Strictly Necessary Cookies</button>
+          <div class="accordion-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sit
+            magnam. Quis quidem corporis deleniti saepe. Praesentium quae ea
+            nulla.
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="accordion-button">+ Performance Cookies</button>
+          <div class="accordion-content">
+            These cookies allow us or our third-party analytics providers to
+            collect information and statistics on use of our services by you and
+            other visitors. This information helps us to improve our services
+            and products for the benefit of you and others.
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="accordion-button">+ Functional Cookies</button>
+          <div class="accordion-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            id rem itaque quia commodi repellat.
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="accordion-button">+ Marketing Cookies</button>
+          <div class="accordion-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+            laborum voluptates ex? Eligendi, officiis est. Praesentium obcaecati
+            alias excepturi. Tempora!
+          </div>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="exit"
+          height="24"
+          width="24"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </section>
+    </div>
+
+    <div id="overlay"></div>
+  </body>
+</html>
