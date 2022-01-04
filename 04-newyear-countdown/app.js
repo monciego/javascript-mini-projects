@@ -7,16 +7,16 @@ const seconds = document.getElementById("seconds");
 
 // get the year (new year)
 const newyearCountDate = () => {
-  // let today = new Date("January 02, 2022 00:00:00");
+  // let today = new Date("January 01, 2022 00:23:00");
   let today = new Date();
   let deadline = "January 1 " + (today.getFullYear() + 1) + " 00:00:00";
 
   if (today.getMonth() === 0 && today.getDate() === 1) {
-    deadline = "January 1 " + today.getFullYear() + " 00:00:00";
     document.querySelector(".countdown-title").innerHTML = "HAPPY NEW YEAR";
-  } else {
     deadline = "January 1 " + (today.getFullYear() + 1) + " 00:00:00";
+  } else {
     document.querySelector(".countdown-title").innerHTML = "NEW YEAR COUNTDOWN";
+    deadline = "January 1 " + (today.getFullYear() + 1) + " 00:00:00";
   }
 
   let countDate = new Date(deadline).getTime();
@@ -41,6 +41,28 @@ const newyearCountDate = () => {
   hours.innerText = textHour;
   minutes.innerText = textMinute;
   seconds.innerText = textSecond;
+
+  if (days.innerHTML === "0") {
+    days.parentElement.parentElement.style.display = "none";
+  } else {
+    days.parentElement.parentElement.style.display = "block";
+  }
+
+  if (hours.innerHTML === "0") {
+    hours.parentElement.parentElement.style.display = "none";
+  } else {
+    hours.parentElement.parentElement.style.display = "block";
+  }
+
+  if (minutes.innerHTML === "0" && hours.innerHTML === "0") {
+    minutes.parentElement.parentElement.style.display = "none";
+  } else {
+    minutes.parentElement.parentElement.style.display = "block";
+  }
+
+  if (today === today.getFullYear() + 1) {
+    minutes.parentElement.parentElement.style.display = "none";
+  }
 };
 
 // run
