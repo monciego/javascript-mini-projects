@@ -9,12 +9,19 @@
 /* variables */
 :root {
   --primary-light: #fff;
+  --dark-text: #344252;
+  --paragraph-text: #a2a8b0;
   --primary-dark: #000;
   --secondary-dark: #121212;
+
+  --btn-dark: #273240;
+  --btn-light: #ffffff;
+  --btn-light-border: #d7dff8;
+  --link: #243bc5;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Mulish", sans-serif;
   background: var(--primary-light);
   color: var(--secondary-dark);
 }
@@ -100,6 +107,49 @@ th {
   position: relative;
 }
 
+/* utilities */
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+/* buttons */
+.btn {
+  padding: 0.35rem 1.25rem;
+  border-radius: 2.25px;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.btn-dark {
+  background-color: var(--btn-dark);
+  color: var(--primary-light);
+}
+
+.btn-light {
+  background-color: var(--btn-light);
+  border: 1px solid var(--btn-light-border);
+}
+
+.btn-dark:hover {
+  opacity: 0.85;
+}
+
+.btn-light:hover {
+  border-color: #95adf5;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
+}
+
 #open-modal {
   padding: 0.5rem 2rem;
   font-size: 1rem;
@@ -121,14 +171,24 @@ th {
 }
 
 /* modal */
+h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
 .modal-content {
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   flex-direction: column;
   background: white;
   box-shadow: 0 52px 48px rgba(119, 146, 229, 0.302);
-  padding: 3rem 2rem;
+  padding: 2.5rem 1.5rem;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -139,7 +199,8 @@ th {
 }
 
 .main-modal {
-  min-width: 50%;
+  min-width: 45%;
+  border-radius: 5px;
 }
 
 .modal-content.active {
@@ -162,7 +223,7 @@ th {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #b7b9bf;
 }
 
 #overlay.active {
@@ -170,28 +231,61 @@ th {
 }
 
 #allow {
-  border: 1px solid blue;
+  width: 40%;
+  border-radius: 5px;
 }
 
 #decline {
-  border: 1px solid red;
+  width: 40%;
+  border-radius: 5px;
+}
+
+.question-modal-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.question-modal-cta {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: end;
 }
 
 /* accordion */
 
+.accordions {
+  margin-top: 1rem;
+}
+
 .accordion {
-  padding: 1rem;
-  width: 30rem;
+  padding: 0.5rem;
+  width: 100%;
+  display: inline-block;
 }
 
 .accordion button {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
   width: 100%;
-  text-align: left;
+  border: none;
+  border-radius: 2.25px;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
 }
+
+/* .accordion-button svg {
+  transform: rotate(-45deg);
+} */
 
 .accordion-content {
   padding: 0.5rem 1rem;
+  width: 100%;
+  font-size: 0.85rem;
 }
 
 .accordion .accordion-content {
@@ -199,5 +293,45 @@ th {
 }
 
 .accord-active + .accordion-content {
-  display: block;
+  display: inline-block;
+}
+
+@media all and (max-width: 900px) {
+  .modal-content {
+    width: 80%;
+  }
+
+  #allow,
+  #decline {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  h2 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+  }
+
+  .btn,
+  .link,
+  p,
+  .accordion button {
+    font-size: 0.85rem;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+
+  #allow,
+  #decline {
+    width: 85%;
+  }
+  .btn {
+    margin: 0.25rem 0;
+  }
 }
