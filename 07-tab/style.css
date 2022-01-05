@@ -1,0 +1,50 @@
+body {
+  font-family: "Mulish", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.85rem;
+}
+
+.page {
+  display: none;
+  padding: 0 0.65rem;
+}
+
+.container {
+  margin: 0 1rem;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 100%;
+  padding: 0.45rem 1rem;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+button.active {
+  border-top: 2px solid blue;
+}
+
+@media all and (min-width: 769px) {
+  .container {
+    width: 50%;
+  }
+}
